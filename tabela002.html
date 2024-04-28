@@ -17,6 +17,19 @@
         border: 1px solid black;
         padding: 10px;}
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(odd){
+        background-color: lightgray;}
+
+        tbody > tr:nth-child(even){
+            background-color: aquamarine;
+        }
+
         thead, tfoot{
         background-color: gray;
         color: white;
@@ -29,6 +42,8 @@
     <h1>uso de tabelas grandes </h1>
     <!-- ANATOMIA PARA TABELAS GRANDES
     TABLE
+    caption //legenda ou titulo da tabela//
+    nao vai tr e nem td no coption
 THEAD
 TR, TD, TG
 TBODY
@@ -37,69 +52,70 @@ TFOOT
 TR, TD, TH-->
 
 <table>
+    <caption>População das unidades federativas</caption>
     <thead>
     <tr>
-        <th>Estado</th>
-        <th>População</th>
+        <th scope="col">Estado</th>
+        <th scope="col" style="width:50px;">População</th>
     </tr>
 </thead>
 <tbody>
     <tr>
-        <td class="num"> São Paulo </td>
+        <td> São Paulo </td>
         <td class="num">45 919 049</td>
     </tr>
     
     <tr>
-        <td class="num">Minas Gerais</td>
+        <td>Minas Gerais</td>
         <td class="num">21.168.791</td>
     </tr>
     <tr>
-        <td class="num">Rio de Janeiro</td>
+        <td>Rio de Janeiro</td>
         <td class="num">17.264.943</td>
     </tr>
     <tr>
-        <td class="num"> São Paulo </td>
+        <td> São Paulo </td>
         <td class="num">45 919 049</td>
     </tr>
     
     <tr>
-        <td class="num">Minas Gerais</td>
+        <td>Minas Gerais</td>
         <td class="num">21.168.791</td>
     </tr>
     <tr>
-        <td class="num">Rio de Janeiro</td>
+        <td>Rio de Janeiro</td>
         <td class="num">17.264.943</td>
     </tr>
     <tr>
-        <td class="num"> São Paulo </td>
+        <td> São Paulo </td>
         <td class="num">45 919 049</td>
     </tr>
     
     <tr>
-        <td class="num">Minas Gerais</td>
+        <td>Minas Gerais</td>
         <td class="num">21.168.791</td>
     </tr>
     <tr>
-        <td class="num">Rio de Janeiro</td>
+        <td>Rio de Janeiro</td>
         <td class="num">17.264.943</td>
     </tr>
     <tr>
-        <td class="num"> São Paulo </td>
+        <td> São Paulo </td>
         <td class="num">45 919 049</td>
     </tr>
     
     <tr>
-        <td class="num">Minas Gerais</td>
+        <td>Minas Gerais</td>
         <td class="num">21.168.791</td>
     </tr>
     <tr>
-        <td class="num">Rio de Janeiro</td>
+        <td>Rio de Janeiro</td>
         <td class="num">17.264.943</td>
     </tr>
 </tbody>
 <tfoot>
     <tr>
-        <th>Total de Habitantes</th>
+        <th scope="row">Total de Habitantes</th>
         <td class="num"><strong>210.147.125</strong>
         </td>
     </tr>
